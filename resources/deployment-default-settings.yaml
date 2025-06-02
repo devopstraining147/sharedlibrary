@@ -1,0 +1,279 @@
+kamaji-cloud:
+  - name: tools
+    clusterId: uks-3091-tools-usw2-deb6
+    sieEnv: tools
+    awsRegion: us-west-2
+  - name: isoperf
+    clusterId: uks-4278-sandbox-usw2-pner
+    sieEnv: isoperf
+    awsRegion: us-west-2
+  - name: e1-pmgt
+    clusterId: uks-4278-e1np-usw2-palm
+    sieEnv: e1-pmgt
+    awsRegion: us-west-2
+  - name: e1-np
+    clusterId: uks-4278-e1np-usw2-palm
+    sieEnv: e1-np
+    awsRegion: us-west-2
+  - name: e2-np
+    clusterId: uks-4278-e1np-usw2-palm
+    sieEnv: e1-np
+    lineEnv: e2-np
+    awsRegion: us-west-2
+  - name: p1-mgmt
+    clusterId: uks-8608-p1pl-usw2-chry
+    sieEnv: p1-mgmt
+    awsRegion: us-west-2
+  - name: p1-pqa
+    clusterId: uks-8608-p1pl-usw2-chry
+    sieEnv: p1-pqa
+    awsRegion: us-west-2
+  - name: p1-spint
+    clusterId: uks-8608-p1pl-usw2-chry
+    sieEnv: p1-spint
+    awsRegion: us-west-2
+  - name: p1-np
+    clusterId: uks-8608-p1np-usw2-soot
+    sieEnv: p1-np
+    awsRegion: us-west-2
+  - name: p1-np-usw2
+    clusterId: uks-8608-p1np-usw2-soot
+    sieEnv: p1-np
+    awsRegion: us-west-2
+  - name: p1-np-use2
+    clusterId: uks-8608-p1np-use2-ball
+    sieEnv: p1-np
+    awsRegion: us-east-2
+
+navigator-cloud:
+  - name: isoperf
+    clusterId: uks-4278-sandbox-usw2-pner
+    sieEnv: isoperf
+    awsRegion: us-west-2
+  - name: d0-tools
+    clusterId: hlp-eks-sse-d0-tools-navnonprodtools-pdx-st1
+    sieEnv: d0-tools
+    awsRegion: us-west-2
+  - name: d0-tools-2
+    clusterId: hlp-eks-sse-d0-tools-navnonprodtools-pdx-de1
+    sieEnv: d0-tools
+    awsRegion: us-west-2
+  - name: d1-pmgt
+    clusterId: uks-4885-d1np-usw2-gt3z
+    sieEnv: d1-pmgt
+    awsRegion: us-west-2
+  - name: d1-pqa
+    clusterId: uks-4885-d1np-usw2-gt3z
+    sieEnv: d1-pqa
+    awsRegion: us-west-2
+  - name: d1-spint
+    clusterId: uks-4885-d1np-usw2-gt3z
+    sieEnv: d1-spint
+    awsRegion: us-west-2
+  - name: d1-np
+    clusterId: uks-4885-d1np-usw2-gt3z
+    sieEnv: d1-np
+    awsRegion: us-west-2
+  - name: d21-np
+    clusterId: uks-7888-d1-usw2-d1ex
+    sieEnv: d1-np
+    awsRegion: us-west-2
+  - name: q1-pmgt
+    clusterId: uks-4885-q1np-usw2-9kz5
+    sieEnv: q1-pmgt
+    awsRegion: us-west-2
+  - name: q1-pqa
+    clusterId: uks-4885-q1np-usw2-9kz5
+    sieEnv: q1-pqa
+    awsRegion: us-west-2
+  - name: q1-spint
+    clusterId: uks-4885-q1np-usw2-9kz5
+    sieEnv: q1-spint
+    awsRegion: us-west-2
+  - name: q1-np
+    clusterId: uks-4885-q1np-usw2-9kz5
+    sieEnv: q1-np
+    awsRegion: us-west-2
+  - name: e1-pmgt
+    clusterId: uks-4885-e1-usw2-tgyh
+    sieEnv: e1-pmgt
+    awsRegion: us-west-2
+  - name: e1-pqa
+    clusterId: uks-4885-e1-usw2-tgyh
+    sieEnv: e1-pqa
+    awsRegion: us-west-2
+  - name: e1-spint
+    clusterId: uks-4885-e1-usw2-tgyh
+    sieEnv: e1-spint
+    awsRegion: us-west-2
+  - name: e1-np
+    clusterId: uks-4885-e1-usw2-tgyh
+    sieEnv: e1-np
+    awsRegion: us-west-2
+  - name: p0-tools
+    clusterId: uks-6785-tools-usw2-dshb
+    sieEnv: p0-tools
+    awsRegion: us-west-2
+  - name: p1-pmgt
+    clusterId: uks-9206-p1-usw2-khrz
+    sieEnv: p1-pmgt
+    awsRegion: us-west-2
+  - name: p1-pqa
+    clusterId: uks-9206-p1-usw2-khrz
+    sieEnv: p1-pqa
+    awsRegion: us-west-2
+  - name: p1-spint
+    clusterId: uks-9206-p1-usw2-khrz
+    sieEnv: p1-spint
+    awsRegion: us-west-2
+  - name: p1-np
+    clusterId: uks-9206-p1-usw2-khrz
+    sieEnv: p1-np
+    awsRegion: us-west-2
+  - name: tools-test
+    clusterId: uks-4885-tools-usw2-gvgh
+    awsRegion: us-west-2
+    sieEnv: tools-test
+  - name: tools-nonprod
+    clusterId: uks-4885-tools-usw2-huqf
+    awsRegion: us-west-2
+    sieEnv: tools-nonprod
+  - name: tools-preprod
+    clusterId: uks-6785-tools-usw2-dshb
+    awsRegion: us-west-2
+    sieEnv: tools-preprod
+  - name: tools-prod
+    clusterId: uks-6785-tools-usw2-dshb
+    awsRegion: us-west-2
+    sieEnv: tools-prod
+
+roadster-cloud:
+  - name: isoperf
+    clusterId: uks-2712-e1np-usw2-shr1
+    sieEnv: isoperf
+    awsRegion: us-west-2
+  - name: tools-preprod
+    clusterId: uks-7433-tools-usw2-npd1
+    awsRegion: us-west-2
+    sieEnv: tools-preprod
+  - name: tools-prod
+    clusterId: uks-7433-tools-usw2-prd1
+    awsRegion: us-west-2
+    sieEnv: tools-prod
+  - name: d1-np
+    clusterId: uks-5512-dev-apne1-shr1
+    sieEnv: d1-np
+    awsRegion: ap-northeast-1
+  - name: e1-np
+    clusterId: uks-2712-e1np-usw2-shr1
+    sieEnv: e1-np
+    awsRegion: us-west-2
+  - name: e1-np-lt
+    clusterId: uks-2712-e1np-usw2-shr1
+    sieEnv: e1-np
+    awsRegion: us-west-2
+  - name: p1-mgmt
+    clusterId: uks-2712-p1pl-usw2-shr1
+    sieEnv: p1-mgmt
+    awsRegion: us-west-2
+  - name: p1-pqa
+    clusterId: uks-2712-p1pl-usw2-shr1
+    sieEnv: p1-pqa
+    awsRegion: us-west-2
+  - name: p1-spint
+    clusterId: uks-2712-p1pl-usw2-shr1
+    sieEnv: p1-spint
+    awsRegion: us-west-2
+  - name: p1-np
+    clusterId: uks-2712-p1np-usw2-shr1
+    sieEnv: p1-np
+    awsRegion: us-west-2
+
+laco-cloud:
+  - name: tools
+    clusterId: uks-1404-tools-usw2-0001
+    sieEnv: tools
+    awsRegion: us-west-2
+  - name: d1-np
+    clusterId: uks-9677-d1np-usw2-0006
+    sieEnv: d1-np
+    awsRegion: us-west-2
+  - name: q1-mgmt
+    clusterId: uks-9677-q1np-usw2-0001
+    sieEnv: q1-mgmt
+    awsRegion: us-west-2
+  - name: q1-pqa
+    clusterId: uks-9677-q1np-usw2-0001
+    sieEnv: q1-pqa
+    awsRegion: us-west-2
+  - name: q1-spint
+    clusterId: uks-9677-q1np-usw2-0001
+    sieEnv: q1-spint
+    awsRegion: us-west-2
+  - name: q1-np
+    clusterId: uks-9677-q1np-usw2-0001
+    sieEnv: q1-np
+    awsRegion: us-west-2
+  - name: q2-mgmt
+    clusterId: uks-9677-q1np-usw2-0001
+    sieEnv: q1-mgmt
+    lineEnv: q2-mgmt
+  - name: q2-pqa
+    clusterId: uks-9677-q1np-usw2-0001
+    sieEnv: q1-pqa
+    lineEnv: q2-pqa
+  - name: q2-spint
+    clusterId: uks-9677-q1np-usw2-0001
+    sieEnv: q1-spint
+    lineEnv: q2-spint
+  - name: q2-np
+    clusterId: uks-9677-q1np-usw2-0001
+    sieEnv: q1-np
+    lineEnv: q2-np
+  - name: e1-mgmt
+    clusterId: uks-9677-e1np-usw2-0001
+    sieEnv: e1-mgmt
+    awsRegion: us-west-2
+  - name: e1-pqa
+    clusterId: uks-9677-e1np-usw2-0001
+    sieEnv: e1-pqa
+    awsRegion: us-west-2
+  - name: e1-spint
+    clusterId: uks-9677-e1np-usw2-0001
+    sieEnv: e1-spint
+    awsRegion: us-west-2
+  - name: e1-np
+    clusterId: uks-9677-e1np-usw2-0001
+    sieEnv: e1-np
+    awsRegion: us-west-2
+  - name: e2-np
+    clusterId: uks-9677-e1np-usw2-0001
+    sieEnv: e1-np
+    lineEnv: e2-np
+    awsRegion: us-west-2
+  - name: e3-np
+    clusterId: uks-9677-e1np-usw2-0001
+    sieEnv: e1-np
+    lineEnv: e3-np
+    awsRegion: us-west-2
+  - name: p1-mgmt
+    clusterId: uks-7519-p1pl-usw2-0001
+    sieEnv: p1-mgmt
+    awsRegion: us-west-2
+  - name: p1-pqa
+    clusterId: uks-7519-p1pl-usw2-0001
+    sieEnv: p1-pqa
+    awsRegion: us-west-2
+  - name: p1-spint
+    clusterId: uks-7519-p1pl-usw2-0001
+    sieEnv: p1-spint
+    awsRegion: us-west-2
+  - name: p1-np
+    clusterId: uks-7519-p1np-usw2-0001
+    sieEnv: p1-np
+    awsRegion: us-west-2
+  - name: p2-np
+    clusterId: uks-7519-p1np-usw2-0001
+    sieEnv: p1-np
+    lineEnv: p2-np
+    awsRegion: us-west-2

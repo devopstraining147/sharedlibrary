@@ -1,0 +1,7 @@
+
+package com.sony.sie.cicd.helpers.enums
+
+enum BuildAction {
+    EMERGENCY_DEPLOYMENT, CI_ONLY, CD_ONLY, CANARY_DEPLOYMENT, CANARY_DELETION, INSTALL_UPDATE_EXTERNAL_CHART
+}
+

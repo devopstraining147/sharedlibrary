@@ -1,0 +1,4 @@
+gaminglife/cd/catalyst-example.yaml
+gaminglife/cd/gradle-catalyst-example.yaml
+gaminglife/cd/tournaments-service.yaml
+platformfundamentals/cd/wiremock-cloudrel.yaml

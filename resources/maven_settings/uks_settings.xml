@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" 
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+  <pluginGroups>
+    <pluginGroup>com.spotify</pluginGroup>
+  </pluginGroups>
+
+
+  <proxies>
+    <proxy>
+      <id>http-proxy</id>
+      <active>true</active>
+      <protocol>http</protocol>
+      <host>squid.internal.aws</host>
+      <port>3128</port>
+      <nonProxyHosts>169.254.169.254|127.0.0.1|localhost|sonynei.net|.consul|us-west-2.compute.internal|voltron.rtnp.sonynei.net|.amazonaws.com</nonProxyHosts>
+    </proxy>
+    <proxy>
+      <id>https-proxy</id>
+      <active>true</active>
+      <protocol>https</protocol>
+      <host>squid.internal.aws</host>
+      <port>3128</port>
+      <nonProxyHosts>169.254.169.254|127.0.0.1|localhost|sonynei.net|.consul|us-west-2.compute.internal|voltron.rtnp.sonynei.net|.amazonaws.com</nonProxyHosts>
+    </proxy>
+  </proxies>
+
+  <servers>
+    <server>
+        <id>navigator-maven</id>
+        <username>hyperloopops</username>
+        <password>{uks-artifactory-secret}</password>
+    </server>
+    <server>
+        <id>sie-central</id>
+        <username>hyperloopops</username>
+        <password>{uks-artifactory-secret}</password>
+    </server>
+    <server>
+        <id>sie-releases</id>
+        <username>hyperloopops</username>
+        <password>{uks-artifactory-secret}</password>
+    </server>
+    <server>
+        <id>sie-snapshots</id>
+        <username>hyperloopops</username>
+        <password>{uks-artifactory-secret}</password>
+    </server>
+  </servers>
+
+  <mirrors>
+    <mirror>
+        <id>sie-central</id>
+        <url>https://artifactory.sie.sony.com/artifactory/sie-maven/</url>
+        <mirrorOf>*,!navigator-maven,!nexus-central</mirrorOf>
+    </mirror>
+  </mirrors>
+
+  <profiles>
+
+    <profile>
+      <id>default</id>
+      <repositories>
+    <repository>
+      <id>navigator-maven</id>
+      <url>https://artifactory.sie.sony.com/artifactory/sie-maven-prod-virtual</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>always</updatePolicy>
+      </snapshots>
+        </repository>
+        <repository>
+            <id>sie-central</id>
+            <url>https://artifactory.sie.sony.com/artifactory/sie-maven</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+
+      </repositories>
+      <pluginRepositories>
+          <pluginRepository>
+              <id>sie-central</id>
+              <url>https://artifactory.sie.sony.com/artifactory/sie-maven</url>
+              <releases>
+                  <enabled>true</enabled>
+              </releases>
+              <snapshots>
+                  <enabled>true</enabled>
+                  <updatePolicy>always</updatePolicy>
+              </snapshots>
+          </pluginRepository>
+      </pluginRepositories>
+  </profile>
+  </profiles>
+  <activeProfiles>
+    <activeProfile>default</activeProfile>
+  </activeProfiles>
+</settings>

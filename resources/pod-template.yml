@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "engine-ci-containers"
+  namespace: "engine-jenkins"
+  labels:
+    engine-ci-workflow-alpha: "engine-ci-workflow"
+spec:
+  securityContext:
+    runAsUser: 0
+    runAsGroup: 40
+    fsGroup: 0

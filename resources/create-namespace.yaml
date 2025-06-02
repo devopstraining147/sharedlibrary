@@ -1,0 +1,62 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: NAMESPACE
+  labels:
+    name: NAMESPACE
+
+---
+
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: jenkins
+  namespace: NAMESPACE
+
+---
+
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: jenkins
+  namespace: NAMESPACE
+subjects:
+- kind: ServiceAccount
+  name: jenkins
+  namespace: NAMESPACE
+roleRef:
+  kind: ClusterRole
+  name: cluster-admin
+  apiGroup: rbac.authorization.k8s.io
+
+---
+
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: jenkins:pdb:policy
+  namespace: NAMESPACE
+subjects:
+- kind: ServiceAccount
+  name: jenkins
+  namespace: NAMESPACE
+roleRef:
+  kind: ClusterRole
+  name: pdbrole
+  apiGroup: rbac.authorization.k8s.io
+
+---
+
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: jenkins-monitoring
+  namespace: NAMESPACE
+subjects:
+  - kind: ServiceAccount
+    name: jenkins
+    namespace: NAMESPACE
+roleRef:
+  kind: ClusterRole
+  name: servicemonitor-clusterrole
+  apiGroup: rbac.authorization.k8s.io
